@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= title %></title>
+	<%- include ./partials/bootstrap.ejs %>
+</head>
+<%- include ./partials/navbar.ejs %>
+<body>
+<main id="main">
+<div class="container" id="container">
+	<div id="header"></div>
+	<div class="row" id="pageTop">
+		<div class="col-xs-12 col text-center">
+ 			<h1 class="font-italic" id="imageTitle">Studio Ghibli</h1>
+ 			<p class="font-italic" id="creatorDate">A Web Tribute</p>
+		</div>
+	</div>
+	<div class="row split left">
+		<div class="col-xs-6 col text-center">
+			<figure class="justify-content-md-center" id="img-div">
+    			<img id="image" src="./images/studioghibli.png" onerror="onerror=null;src='./images/imagenotfound.png'" 
+      			class="img-fluid img-thumbnail img-max"
+      			alt="Alt image text"
+    			/>
+    			<figcaption class="caption" id="img-caption">
+    				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur velit id semper scelerisque. Duis ut porta magna. Maecenas at sagittis nisl, in iaculis justo. Curabitur a leo a nulla ultrices tincidunt. Donec facilisis, lorem condimentum sodales fringilla, justo lorem vulputate nunc, in lobortis velit enim a ligula. Nulla volutpat condimentum varius. Duis mollis lorem nec gravida maximus. Praesent porttitor purus non augue egestas auctor. Nam molestie egestas laoreet. Praesent tempus orci ac lacinia vestibulum. Phasellus commodo porttitor ex, eu ultricies felis eleifend vitae. Suspendisse congue vitae lectus ac dignissim. Ut dapibus, justo tempor hendrerit aliquam, nisi magna blandit erat, nec aliquam elit lacus ac eros. In eget luctus orci, eu egestas eros. Aenean non accumsan purus, ac convallis mauris. Phasellus id dolor ac justo ornare ullamcorper rutrum et mauris.
+
+Nam et posuere neque. Duis vel tincidunt erat. Pellentesque eget sagittis felis. Quisque tincidunt diam in magna vestibulum fermentum. Aliquam quis convallis ante. Aenean nec odio at ante mattis finibus porttitor in dui. Phasellus non ornare lorem, eu faucibus nibh. Sed interdum augue eget ante congue pulvinar. Cras ante risus, euismod sit amet eleifend non, feugiat nec arcu. Quisque non tortor quam. Vestibulum turpis erat, sollicitudin id orci eu, lacinia egestas ante. Mauris at arcu at lectus porta tristique. Integer eget convallis orci. Sed at lectus elementum, fermentum magna eu, malesuada ex. In est lacus, pretium sed accumsan id, congue ut lorem. Praesent elit mauris, rutrum vel ligula ut, iaculis tincidunt nulla.
+    			</figcaption>
+  			</figure>
+  		</div>
+  	</div>
+  	<div class="split right">
+  	<div class="row">
+  		<div class="col-xs-6 col text-center">
+  			<section id="tribute-info">
+    			<h3 class ="font-italic" id="headline">Movies</h3>
+			</section>
+		</div>
+	</div>
+	<div class="row text-center justify-content-md-center movieList">
+		<div class="col-xs-1"></div>
+		<div class="col-xs-4">
+		<ul id="movieList">
+		</ul>
+	</div>
+	<div class="col-xs-1"></div>
+	</div>
+</div>
+</div>
+<%- include ./partials/footer.ejs %>
+</main>
+<%- include ./partials/scripts.ejs %>
+</body>
+</html>
